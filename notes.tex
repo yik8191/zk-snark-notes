@@ -37,8 +37,11 @@ This schematic shows how we transform the computation.\\
 
 \section*{Arithmetic Circuit}
 
+
 \begin{figure}[h]
-\includegraphics[width=0.5\textwidth]{circuit}
+  \includegraphics[width=0.5\textwidth]{circuit}  
+  \caption[Circuit]{Image from https://electriccoin.co/blog/snark-explain5/}
+  \label{fig:circuit}
 \end{figure}
 
 The first step is to convert whatever problem on hand into 
@@ -144,7 +147,7 @@ The following are some gory details to make sure things are watertight.
 \subsection*{Ensure polynomials are chosen according to an assignment}
 
 If we just check 
-$u(s)*v(s)-w(s) = t(s)*h(s)$
+$u(s)\cdot v(s)-w(s) = t(s)\cdot h(s)$
 where $u, v, w, h$ are all of degree at most $d$, we 
 don't know that $u, v, w$ were constructed from 
 a satisfying assignment $(a_1, \dots, a_n)$.
